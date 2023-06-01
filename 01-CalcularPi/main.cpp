@@ -4,19 +4,22 @@
 
 using namespace std;
 
-double calcularPi(){
-    double resultado{0};
-    
-    for (int i{0}; i < 1000000; i++)
+float calcularPi(){
+    float resultado{0};
+    float corte{3.141592/4};
+    double i{0};
+
+    while (resultado != corte)
     {
         resultado = resultado + pow((-1), i)/((2*i)+1);
+        i++;
     }
     
     return resultado*4;
 }
 
 int main(){
-    double resultado;
+    float resultado;
 
     resultado = calcularPi();
 
