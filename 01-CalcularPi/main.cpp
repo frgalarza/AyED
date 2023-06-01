@@ -23,7 +23,7 @@ int main(){
 
     resultado = calcularPi();
 
-    cout<<"El numero pi es igual a "<< setprecision(7) << resultado;
+    cout<<"El numero pi es igual a: "<< setprecision(7) << resultado;
     
     return 0;
 }
